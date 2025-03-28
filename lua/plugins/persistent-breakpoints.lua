@@ -22,6 +22,7 @@ return {
     -- @param buf_id integer the buffer the breakpoint was set on
     -- @param line integer the line the breakpoint was set on
     on_load_breakpoint = nil,
+    always_reload = true,
   },
   keys = {
     {
