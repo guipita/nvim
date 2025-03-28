@@ -19,3 +19,7 @@ map("n", "<A-a>", "a", opts)
 
 -- Map <A-s> to S-mode
 map("n", "<A-s>", "S", opts)
+
+vim.keymap.set("n", "<leader>dv", function()
+  require("dap-view").toggle()
+end, { desc = "Toggle nvim-dap-view" })
