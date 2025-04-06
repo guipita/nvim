@@ -22,6 +22,8 @@ map("n", "<A-s>", "S", opts)
 
 map("n", "<C-a>", "ggVG", opts)
 
+map("n", "J", "5j", opts)
+
 vim.keymap.set("n", "<leader>dv", function()
   require("dap-view").toggle()
 end, { desc = "Toggle nvim-dap-view" })
