@@ -1,7 +1,10 @@
 return {
   "saghen/blink.cmp",
-  opts = function(_, opts)
-    opts.keymap.preset = "super-tab"
-    return opts
-  end,
+  opts = {
+    keymap = {
+      preset = "enter",
+      ["<S-Tab>"] = { "select_prev", "fallback" },
+      ["<Tab>"] = { "select_next", "fallback" },
+    },
+  },
 }
